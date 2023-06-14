@@ -1,5 +1,5 @@
 # might be necessary to execute bash setup.sh first 
-file=$(ls -1 $(1)*csv | tail -n1)
+file=$(ls -1 ${1}*csv | tail -n1)
 stations=$(awk 'BEGIN { FS = "," } NR>5 { if(length($1)>8) print $1 }' $file)
 for station in $stations
 do
