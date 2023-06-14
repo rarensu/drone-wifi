@@ -1,1 +1,1 @@
-airodump-nd -d $1 -c 1 wlan1
+airodump-ng -d $1 -c 1 wlan1
